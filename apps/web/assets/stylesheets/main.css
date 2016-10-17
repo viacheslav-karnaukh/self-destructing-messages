@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	font-size: 65%;
+	
+}
+body {
+	font-family: sans-serif;
+    color: #444;
+    background: #03111a;
+    color: #eee;
+}
+h1 {
+	text-align: center;
+	font-size: 2.8rem;
+}
+.switcher {
+	background: #3a424d;
+	margin: 0 auto;
+	padding: .2rem;
+	overflow: hidden;
+	width: 26.5rem;
+}
+.switch-button {
+	width: 13rem;
+	padding: .2rem;
+	float: left;
+}
+.switcher label {
+	width: 100%;
+	float: left;
+	border-radius: .4rem;
+	text-align: center;
+	background: inherit;
+	padding: .5rem;
+	color: #aaa;
+	font-family: sans-serif;
+	font-size: 1.4rem;
+}
+.switcher label:hover {
+	cursor: pointer;
+}
+.switcher input {
+	margin: 0;
+	display: none;
+}
+input:checked + label {
+	background: #3c8dbc;
+	background-image: -webkit-linear-gradient(#77c7fc, #2980b9);
+	background-image: -o-linear-gradient(#77c7fc, #2980b9);
+	background-image: linear-gradient(#77c7fc, #2980b9);
+	color: #fff;
+}
+input:checked + label:hover {
+  cursor: default;
+}
+.input-text {
+	resize: none;
+	height: 15rem;
+	display: block;
+    outline: none;
+    color: inherit;
+}
+.input-text, .stored-message {
+	width: 45rem;
+	font-size: 2rem;
+    padding: 2rem;
+	background: #000;
+}
+.stored-message {
+	margin: 5rem auto;
+    border: 1px solid #333;
+}
+.save-message {
+	display: none;
+	width: 45rem;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	padding: 1rem 0;
+	font-size: 1.8rem;
+	background: #3c8dbc;
+	background-image: -webkit-linear-gradient(#77c7fc, #2980b9);
+	background-image: -o-linear-gradient(#77c7fc, #2980b9);
+	background-image: linear-gradient(#77c7fc, #2980b9);
+}
+.save-message.disabled {
+	display: block;
+	cursor: not-allowed;
+	background: rgba(142, 200, 228, 0.5);
+	color: #aaa;
+}
+.char-counter {
+	margin: 1rem;
+	font-size: 2rem;
+}
+.char-counter .entered {
+	font-size: inherit;
+}
+
+.input-block, .output-block {
+	width: 45rem;
+	margin: 2rem auto;
+	font-size: 3rem;
+	text-align: center;
+}
+.output-block {
+	display: none;
+}
+.message-url {
+	font-size: 2rem;
+    color: #77c7fc;
+}

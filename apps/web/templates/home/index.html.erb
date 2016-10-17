@@ -1,0 +1,21 @@
+<div class="switcher">
+  <div class="switch-button">
+    <input type="radio" id="until-hour"  name="switch" checked/>
+    <label for="until-hour">store one hour</label>
+  </div>
+  <div class="switch-button">
+    <input type="radio" id="until-visit"  name="switch"/>
+    <label for="until-visit">store until visit</label>
+  </div>
+</div>
+
+<div class="input-block">
+	<textarea class="input-text"></textarea>
+	<button class="save-message">SAVE</button>
+  <button class="save-message disabled">SAVE</button>
+  <div class="char-counter"><span class="entered">0</span> / 140</div>
+</div>
+<div class="output-block">
+  <p>Your message is available <a href="" class="message-url">here</a></p>
+</div>
+<%= javascript 'main' %>
