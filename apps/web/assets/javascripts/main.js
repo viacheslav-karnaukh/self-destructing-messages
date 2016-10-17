@@ -41,7 +41,7 @@
 
 		} else {
 			saveMessageBtn.style.display = 'none';
-			saveMessageBtnDisabled.style.display = 'block'
+			saveMessageBtnDisabled.style.display = 'block';
 			charCountNode.style.color = 'red'
 		}
 	});
