@@ -16,7 +16,6 @@
 			const req = new XMLHttpRequest();
 			req.open(method, url, true);
 			req.addEventListener('load', () => {
-				console.log('req =>', req)
 				const res = (() => {
 					try {
 						return JSON.parse(req.response)
@@ -24,8 +23,6 @@
 						return req.response
 					}
 				})();
-				
-				console.log('res =>', res)
 				req.status >= 200 && req.status < 400 ? resolve(res) : reject(res);
 			});
 			req.send();
