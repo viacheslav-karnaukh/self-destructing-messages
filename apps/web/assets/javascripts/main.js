@@ -17,7 +17,14 @@
 			req.open(method, url, true);
 			req.addEventListener('load', () => {
 				console.log('req =>', req)
-				const res = JSON.parse(req.response);
+				const res = (() => {
+					try {
+						return JSON.parse(req.response)
+					} catch(e) {
+						return req.response
+					}
+				})();
+				
 				console.log('res =>', res)
 				req.status >= 200 && req.status < 400 ? resolve(res) : reject(res);
 			});
